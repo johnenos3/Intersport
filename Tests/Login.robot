@@ -14,3 +14,10 @@ Login to intersport
     Click 'Увійти'
     Verify succesfull login with user    ${user_account}
 
+Logout
+    [Tags]    logout
+
+
+
+
+
