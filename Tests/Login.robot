@@ -12,10 +12,15 @@ Login to intersport
     Enter login    ${user_login}
     Enter password    ${pwd}
     Click 'Увійти'
-    Verify succesfull login with user    ${user_account}
+    Verify successful login with user    ${user_account}
 
 Logout
+    [Documentation]    verify that you can logout from system
     [Tags]    logout
+    Login to customer cabinet
+    Click 'Вихід'
+    Verify successful logout
+
 
 
 

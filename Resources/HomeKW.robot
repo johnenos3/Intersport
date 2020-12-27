@@ -37,7 +37,23 @@ Click 'Увійти'
     wait until element is visible    ${sign_in}
     click element    ${sign_in}
 
-Verify succesfull login with user
+Click 'Вихід'
+    wait until element is visible    ${sign_out}
+    click element    ${sign_out}
+
+Verify successful login with user
     [Arguments]    ${user_name}
     wait until page contains element    ${general_info_after_login}     timeout=30s
     wait until page contains element    //span[@title='${user_name}']
+
+Verify successful logout
+    wait until page contains element    //h2[text()='Вхід в систему']     timeout=30s
+
+Login to customer cabinet
+    Go to intersport    http://165.22.31.162    chrome
+    Click 'Мій акаунт'
+    Enter login    ${user_login}
+    Enter password    ${pwd}
+    Click 'Увійти'
+    Verify successful login with user    ${user_account}
+
