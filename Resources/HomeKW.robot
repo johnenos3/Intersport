@@ -5,7 +5,7 @@ Variables    ../POM/home_locators.py
 *** Variables ***
 ${url}          http://165.22.31.162
 ${browser}      chrome
-${user_login}   kristinasyvak159@gmail.com
+${user_login}   kristik157@gmail.com
 ${pwd}          callcentre
 ${user_account}   Крістіна тест
 
